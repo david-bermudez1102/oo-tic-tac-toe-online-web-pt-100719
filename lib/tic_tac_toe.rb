@@ -147,8 +147,8 @@ class TicTacToe
   def over?
     if(draw? || won?)
       true
-    elsif(full?)
-      false
+    else
+      full?
     end
   end
 
