@@ -129,11 +129,7 @@ class TicTacToe
   end
 
   def full?
-    if(@board.any? { |e| e==" " })
-      false
-    elsif(!won?)
-      true
-    end
+    @board.all? { |e| e==" " }
   end
 
   def draw?
@@ -145,7 +141,7 @@ class TicTacToe
   end
 
   def over?
-    if(draw? || won?)
+    if(draw? || won? || full?)
       true
     else
       full?
