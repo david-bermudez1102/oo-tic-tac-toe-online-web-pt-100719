@@ -169,7 +169,7 @@ class TicTacToe
 
 
 
-      if(!over? && !draw?)
+      if(!over?)
           if(!won?)
             turn
             play
