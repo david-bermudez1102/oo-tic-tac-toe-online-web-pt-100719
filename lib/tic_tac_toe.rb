@@ -7,30 +7,11 @@ class TicTacToe
   end
 
   def display_board
-    printable_board = []
-
-    @board.each_slice(3){ |a|
-      printable_board << a
-    }
-
-    formatted_board = []
-
-    printable_board.each_with_index { |e,index|
-      formatted_board[index] = " "
-      e.each_with_index { |b, i|
-        if(i==(e.length-1))
-          formatted_board[index] << "#{b.to_s} "
-        else
-          formatted_board[index] << "#{b.to_s} | "
-        end
-      }
-      if(index==(printable_board.length-1))
-        puts formatted_board[index]
-      else
-        puts formatted_board[index]
-        puts "-----------"
-      end
-    }
+    puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
+   puts "-----------"
+   puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
+   puts "-----------"
+   puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
   def input_to_index(input)
