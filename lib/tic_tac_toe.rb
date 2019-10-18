@@ -168,6 +168,9 @@ class TicTacToe
   def play
 
 
+    if(draw?)
+      puts "Cat's Game!"
+    end
 
       if(!over?)
           if(!won?)
@@ -181,8 +184,6 @@ class TicTacToe
         puts "Congratulations #{winner}!"
       end
 
-      if(draw?)
-        puts "Cat's Game!"
-      end
+
   end
 end
