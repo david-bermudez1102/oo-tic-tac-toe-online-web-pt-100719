@@ -167,15 +167,15 @@ class TicTacToe
 
   def play
 
-    turn
+    
     if(draw?)
       puts "Cat's Game!"
     end
 
-      if(!over?)
+      while(!over?)
           if(!won?)
-
-            play
+            
+            turn
 
           end
         end
