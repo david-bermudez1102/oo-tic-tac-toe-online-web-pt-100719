@@ -168,23 +168,14 @@ class TicTacToe
   def play
 
 
-turn
-over = false
-      while(over==false)
-          if(!won?)
-
-            turn
-
-          end
-          if(won?)
-            puts "Congratulations #{winner}!"
-          end
-          if(draw?)
-            puts "Cat's Game!"
-          end
-          over = over?
-        end
-
+    until over?
+          turn
+       end
+       if won?
+          puts "Congratulations #{winner}!"
+       elsif draw?
+          puts "Cats Game!"
+       end
 
 
 
