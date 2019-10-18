@@ -133,11 +133,13 @@ class TicTacToe
   end
 
   def draw?
-    if(won?)
-      false
-    else
-      true
-    end
+    if !won? && full?
+     return true
+   elsif !won? && !full?
+     return false
+   else won?
+     return false
+   end
   end
 
   def over?
