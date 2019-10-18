@@ -145,10 +145,10 @@ class TicTacToe
   end
 
   def over?
-    if(@board.any? { |e| e==" " })
-      false
-    elsif(draw? || won?)
+    if(draw? || won? || full?)
       true
+    else
+      false
     end
   end
 
