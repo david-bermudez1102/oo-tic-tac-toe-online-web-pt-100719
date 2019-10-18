@@ -169,8 +169,8 @@ class TicTacToe
 
 
 turn
-
-      while(!over?)
+over = false
+      while(!over)
           if(!won?)
 
             turn
@@ -182,6 +182,7 @@ turn
           if(draw?)
             puts "Cat's Game!"
           end
+          over = over?
         end
 
 
