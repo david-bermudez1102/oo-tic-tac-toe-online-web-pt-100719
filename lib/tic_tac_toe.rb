@@ -145,10 +145,10 @@ class TicTacToe
   end
 
   def over?
-    if(draw? || won? || full?)
-      true
-    else
+    if(@board.any? { |e| e==" " })
       false
+    elsif(draw? || won? || full?)
+      true
     end
   end
 
@@ -167,13 +167,16 @@ class TicTacToe
 
   def play
 
-    until over?
+    counter = 0
+    until counter == 9
+      if(!over?)
       turn
-    end
-    if won?
+    elsif won?
        puts "Congratulations #{winner}!"
     elsif draw?
        puts "Cats Game!"
+    end
+      counter += 1
     end
 
 
