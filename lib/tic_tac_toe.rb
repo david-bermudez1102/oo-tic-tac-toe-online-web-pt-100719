@@ -170,7 +170,7 @@ class TicTacToe
 
 turn
 over = false
-      while(!over)
+      while(over==false)
           if(!won?)
 
             turn
