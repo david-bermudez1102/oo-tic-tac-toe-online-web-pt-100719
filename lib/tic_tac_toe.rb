@@ -77,7 +77,7 @@ class TicTacToe
   end
 
   def turn
-    input = gets
+    input = gets.strip
     @input_to_index = input_to_index(input)
     @valid_move = valid_move?(@input_to_index)
     @current_player = current_player
@@ -87,7 +87,7 @@ class TicTacToe
       display_board
     else
       puts "invalid"
-      input = gets
+      input = gets.strip
     end
   end
 
