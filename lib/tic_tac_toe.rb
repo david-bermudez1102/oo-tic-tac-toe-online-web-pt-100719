@@ -174,7 +174,7 @@ class TicTacToe
 
       if(!over?)
           if(!won?)
-            
+
             play
 
           end
