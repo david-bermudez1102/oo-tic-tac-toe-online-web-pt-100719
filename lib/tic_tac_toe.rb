@@ -170,11 +170,10 @@ class TicTacToe
     until over?
       turn
     end
+    if won?
        puts "Congratulations #{winner}!"
     elsif draw?
        puts "Cats Game!"
-    end
-      counter += 1
     end
 
 
