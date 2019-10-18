@@ -144,7 +144,7 @@ class TicTacToe
     if(draw? || won? || full?)
       true
     else
-      full?
+      false
     end
   end
 
